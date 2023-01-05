@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity1_JSConditions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap'); 
+    body {
+        margin: 1rem;
+        padding: 0;
+        height: 100vh;
+        width: 100vh;
+        overflow: hidden;
+        background: #03c9c9;
+        font-size: 3rem;
+
+    }
+
+    .answer {
+        font-family: 'Bubblegum', sans-serif;
+        font-weight: bolder;
+        font-style: italic;
+        color: red;
+        text-decoration: underline;
+        
+
+    }
+    
+    .first , .second{
+        font-weight:700;
+    }
+
+    .role{
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 
+        1px 1px rgb(214 214 214 / 50%),
+        3px 3px rgb(0 0 0 / 40%);
+        
+    }
+
+    .container {
+        position: relative;
+        left: 30%;
+        top: 25%;
+        
+    }
+        
+    
+</style>
+<body>
+    <script>
+        var num1 = prompt("INPUT FIRST NUMBER");
+        var num2 = prompt("INPUT SECOND NUMBER");
+        
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var result = "";
+
+        
+
+
+         window.onload = function() {
+            testScript();
+            function testScript(){
+                document.getElementById("firstNum").innerHTML = num1;
+                document.getElementById("secondNum").innerHTML = num2;
+
+                document.getElementById("firstNum2").innerHTML = num1;
+                document.getElementById("secondNum2").innerHTML = num2;
+
+                document.getElementById("firstNum3").innerHTML = num1;
+                document.getElementById("secondNum3").innerHTML = num2;
+
+                document.getElementById("firstNum4").innerHTML = num1;
+                document.getElementById("secondNum4").innerHTML = num2;
+
+                document.getElementById("add").innerHTML = num1 + num2;
+                document.getElementById("sub").innerHTML = num1 - num2;
+                document.getElementById("multi").innerHTML = num1 * num2;
+                document.getElementById("div").innerHTML = num1 / num2;
+    };
+} 
+        
+    </script>
+    
+    <!-- THIS IS ADDITION -->
+    <div class="container">
+        <p id="thisIsTheLargeNumber" class="h1">
+            <span class="role">ADDITION:</span> <span class="first" id="firstNum"></span> + <span class="second" id="secondNum"></span> = <span class="answer" id="add"></span>
+        </p>
+    
+        <!-- THIS SUBSTRACTION -->
+        <p id="thisIsTheLargeNumber" class="h1">
+           <span class="role">SUBSTRACTION:</span> <span class="first" id="firstNum2"></span> - <span class="second"  id="secondNum2"></span> = <span class="answer" id="sub"></span>
+        </p>
+    
+        <!-- THIS IS MULTIPLICATION -->
+        <p id="thisIsTheLargeNumber" class="h1">
+           <span class="role">MULTIPLICATION:</span> <span class="first" id="firstNum3"></span> * <span class="second"  id="secondNum3"></span> = <span class="answer" id="multi"></span>
+        </p>
+    
+        <!-- THIS IS DIVISION -->
+        <p id="thisIsTheLargeNumber" class="h1">
+           <span class="role">DIVISION:</span> <span class="first" id="firstNum4"></span> / <span class="second" id="secondNum4"></span> = <span class="answer" id="div"></span>
+        </p>    
+    </div>
+    
+
+
+
+
+
+</body>
+</html>
