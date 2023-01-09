@@ -1,1 +1,1 @@
-# Rod Stephine D. Sarsaba_WD42P_JSConditions_Activity
+# Exercise 2  Javascript Conditionals
